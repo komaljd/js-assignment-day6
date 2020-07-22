@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6: Webpage</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        html,body{height: 100%;}
+        .mainParent{
+            text-align: center;
+        }
+        .mainParent{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%
+        }
+        .mainParent h1{
+            margin: 10px 0px;
+            font-size: 50px;
+        }
+        .btn{
+            border: 0;
+            border-radius: none;
+            padding: 10px;
+            background-color: black;
+            color: #fff;
+            cursor: pointer;
+            margin: 20px 0px;
+            
+        }
+        /* result */
+        body.darkMode{
+            background-color:#dde6e5c2 !important;
+            color: #636060;
+            transition: .3s ease-in;
+        }
+    </style>
+</head>
+<body>
+
+   <div class="mainParent">
+        <h1 id="Welcomenote">welcome</h1>
+     
+        <span id="date"></span>
+        <span class="mode"></span>
+        
+        <button class="btn" onclick="darkmode()">Click For Dark Mode</button>
+   </div>
+
+
+    <!-- script here -->
+    <script src="day6-que3.js"></script>
+</body>
+</html>
