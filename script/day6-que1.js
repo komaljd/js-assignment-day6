@@ -1,22 +1,13 @@
 console.log("Batch-1 day 6 :question 1");
-// ARRAY HERE
-let list = document.getElementById('list');
-list.getAttribute('id');
-console.log(list);
-let frutis = ["apple","banana","orange"];
-console.log(frutis);
-frutis.forEach(el=>{
-    // console.log(el);
-   list.innerHTML += `<li>${el}</li>`
-   list.setAttribute("style","color:#f00");
-})
+// array using change backgournd color
 
-// background color
-
-setTimeout(() => {
-    
-      document.body.style.backgroundColor = "rgb(232 232 232)";
-
-      document.body.style.color = "rgb(109 109 109)";
-    
-}, 5000);
+let i = 0;
+function my(){
+      let doc = document.querySelector("body");
+      console.log(doc);
+      let arrclr = ["#f7f3f3","#3adcd9","#aedcaf"];
+      doc.style.backgroundColor = arrclr[i];
+      console.log(arrclr[i])
+      i = (i + 1) % arrclr.length; 
+}
+setInterval(my, 5000);
